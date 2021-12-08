@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Test</title>
+		<link type="text/css" rel="stylesheet" href="sobes.css"/>
+	</head>
+	<body>
+		<form action="" method="get">
+		<input id="searchInput" value="" placeholder="Искать здесь" type="search">
+		<button id="searchButton">Search</button>
+
+	
+	<script> 
+		const input = document.getElementById('searchInput')
+		const button = document.getElementById('searchButton')
+
+		const search = () => {
+		const text = input.value;
+		if(text === 'google') {
+		alert('Yandex круче. Но это не точно')
+		} else {
+		alert(text)
+		}
+		}
+
+		let vlad = { name: "Влад", age: 24 };
+		let ann = { name: "Энн", age: 27 };
+		let danila = { name: "Данила", age: 14 };
+		let friends = [vlad, ann, danila];
+
+		const search2 = () => {
+		alert(friends[0].name);
+		}
+		
+		button.addEventListener('click', search);
+
+		button.addEventListener('click', search2);
+		
+		function superSum(a,b){
+		return a+b;
+		}
+
+		let sum = superSum(3,6); 
+		alert('Сумма чисел:' + ' ' + sum);
+		
+		let minNum = [25, 3, 40, 8, 17, -1];
+		let min = minNum[0];
+		let max = minNum[0];
+ 
+		for (let i = 1; i < minNum.length; i++) {
+		if(minNum[i] < min){
+        min = minNum[i];
+		}
+		if(minNum[i] > max){
+        max = minNum[i];
+		} 
+		}	
+ 
+		alert('Минимальное число:' + ' ' +min);
+		alert('Максимальное число:' + ' ' +max);
+	
+
+	</script>
+	
+	</body/>
+<html/>
